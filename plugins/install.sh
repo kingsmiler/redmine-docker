@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
-echo hello
+cd /usr/src/redmine
+
+bundle install
+bundle exec rake redmine:plugins:migrate RAILS_ENV=production
 
 exit 0
