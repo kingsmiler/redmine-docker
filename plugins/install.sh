@@ -2,7 +2,7 @@
 
 cd /usr/src/redmine
 
-bundle install
-bundle exec rake redmine:plugins:migrate RAILS_ENV=production
+# for dashboard
+bundle install --without development test
 
 exit 0
