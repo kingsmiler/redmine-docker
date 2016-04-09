@@ -10,7 +10,5 @@ bundle install --without development test
 # 2) for checklist
 bundle exec rake redmine:plugins NAME=redmine_checklists RAILS_ENV=production
 
-# 3) for qa
-bundle exec rake redmine:plugins NAME=redmine_questions RAILS_ENV=production
 
 exit 0
