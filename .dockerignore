@@ -1,0 +1,9 @@
+.git
+.m2
+
+LICENSE
+README.md
+
+.idea
+.gitignore
+*.iml
