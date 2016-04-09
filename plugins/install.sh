@@ -2,7 +2,15 @@
 
 cd /usr/src/redmine
 
-# for dashboard
+# install
 bundle install --without development test
+
+# 1) for dashboard, just only 'bundle install'
+
+# 2) for checklist
+bundle exec rake redmine:plugins NAME=redmine_checklists RAILS_ENV=production
+
+# 3) for qa
+bundle exec rake redmine:plugins NAME=redmine_questions RAILS_ENV=production
 
 exit 0
